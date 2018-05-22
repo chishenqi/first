@@ -5,6 +5,11 @@
 
 
 
+
+
+
+
+
 import org.junit.Test;
 
 import java.util.concurrent.ExecutorService;
@@ -25,9 +30,8 @@ public class ThreadPools {
         }
     }
     @Test
-    public void testPost() throws Exception {
-        ClientWithResponseHandler client=new ClientWithResponseHandler();
-        client.doPost();
-
+    public  void testPost(){
+        System.out.println("ascasc");
     }
+
 }

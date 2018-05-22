@@ -32,7 +32,7 @@ public class ClientWithResponseHandler {
         parameters.add(new BasicNameValuePair("creditCardNum", "620000000006111"));
         parameters.add(new BasicNameValuePair("bankName", "建设银行"));
 
-        parameters.add(new BasicNameValuePair("records", "[{\"payApplyTime\":1526995098233,\"orderFee\":10000,\"paymentType\":\"MORTGAGE_PAY\",\"serviceFee\":10000,\"orderWaybillId\":1,\"mortgageFee\":10000}]"));
+        parameters.add(new BasicNameValuePair("records", "[{\"actualReceiveFee\":980.00,\"billDetailIds\":[1127785,1127784],\"cashRate\":0,\"derictCarrierFlag\":false,\"guarantyCash\":0.00,\"line\":\"成都至北京专线\",\"manageRate\":0.2000,\"payApplyTime\":1526995475134,\"payBeginTime\":1525852264000,\"payWithdrawStatus\":\"完结\",\"relyCompanyId\":8,\"serviceFee\":20.00,\"totalFee\":1000.00,\"wayBillId\":1448203860750}]"));
         // 构造一个form表单式的实体
         UrlEncodedFormEntity formEntity = new UrlEncodedFormEntity(parameters);
         // 将请求实体设置到httpPost对象中

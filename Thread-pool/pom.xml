@@ -142,11 +142,6 @@
       <version>1.2.23</version>
     </dependency>
     <dependency>
-      <groupId>com.best.neptune.common.biz</groupId>
-      <artifactId>fast-horse-biz</artifactId>
-      <version>1.7-SNAPSHOT</version>
-    </dependency>
-    <dependency>
       <groupId>commons-fileupload</groupId>
       <artifactId>commons-fileupload</artifactId>
       <version>1.3</version>
@@ -180,7 +175,11 @@
       <artifactId>httpclient</artifactId>
       <version>4.5.2</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>RELEASE</version>
+    </dependency>
 
 
   </dependencies>
