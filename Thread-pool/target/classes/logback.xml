@@ -5,9 +5,21 @@
             <pattern>%d{HH:mm:ss.SSS} %5p %-40logger{40}:%L[%t] - %m%n</pattern>
         </encoder>
     </appender>
-
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${app.log.path:-C:\\}Thread.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${app.log.path:-D:\\}Thread.log.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %5p %-40logger{40}:%L[%t] - %m%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
     <root>
         <level value='INFO'/>
         <appender-ref ref='CONSOLE'/>
+        <appender-ref ref='FILE'/>
     </root>
 </configuration>
